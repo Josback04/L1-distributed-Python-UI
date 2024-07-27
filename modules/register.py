@@ -256,21 +256,21 @@ def client_check(root):
         print("existing users:", exist_email)
 
         if email1 in exist_email:
-            messagebox.showinfo('ALERT!', 'EMAIL ALREADY REGISTERED')
+            messagebox.showinfo('ALERT!', 'Email déjà enregisté')
             email.delete(0, END)
 
         else:
             if pwd1 == cpwd1:
                 client_complete(root)
             else:
-                messagebox.showinfo('ALERT!', 'PASSWORDS DO NOT MATCH')
+                messagebox.showinfo('ALERT!', 'les mots de passe ne correspondent pas')
 
     else:
-        messagebox.showinfo('ALERT!', 'ALL FIELDS ARE MUST BE FILLED')
+        messagebox.showinfo('ALERT!', 'Veuillez remplir tous les champs')
 
 
 def client_complete(root):
-    print("hello ", name1, ", Let's complete your profile")
+    print("Salut ! ", name1, ", Complétons votre profil")
     r3 = Frame(root, height=700, width=1050)
     r3.place(x=0, y=0)
     r3.render = PhotoImage(file="elements/reg_bg.png")
@@ -358,10 +358,10 @@ def client_submit(root):
             skills.delete(0, END)
             mycon.commit()
             mycon.close()
-            messagebox.showinfo('SUCCESS!', 'Registration Successful')
+            messagebox.showinfo('SUCCESS!', 'Inscription réussie')
             logi(root)
         except:
             pass
 
     else:
-        messagebox.showinfo('ALERT!', 'ALL FIELDS ARE MUST BE FILLED')
+        messagebox.showinfo('ALERT!', 'Tous les champs doivent etre remplis')
