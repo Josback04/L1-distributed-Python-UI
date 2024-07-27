@@ -1,5 +1,5 @@
 CREATE_SCHEMA = """
-CREATE SCHEMA IF NOT EXISTS `hire-me`;
+CREATE SCHEMA IF NOT EXISTS `mydb`;
 """
 
 Create_users_Table = """
