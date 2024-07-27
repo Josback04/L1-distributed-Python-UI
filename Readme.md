@@ -1,4 +1,4 @@
-#### Installer Mysql pour python
+#### Installer Mysql pour python, si cenest pas déjà fait
 ```
     pip install mysql-connector-python
 ```
